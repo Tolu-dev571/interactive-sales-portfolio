@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Interactive Sales Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <header>
+        <h1>My Sales Portfolio</h1>
+        <p>Lead Tracker and Sales Calculator</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Lead Tracker</h2>
+
+            <input type="text" id="leadName" placeholder="Lead Name">
+            <input type="text" id="companyName" placeholder="Company">
+
+            <button onclick="addLead()">Add Lead</button>
+
+            <p id="totalLeads">Total Leads: 0</p>
+
+            <ul id="leadList"></ul>
+        </section>
+        <h2>Sales Calculator</h2>
+
+        <input type="number" id="leads" placeholder="Number of Leads">
+        <input type="number" id="conversionRate" placeholder="Conversion Rate">
+        <input type="number" id="price" placeholder="Price per Sale">
+
+        <button id="calculateBtn">Calculate Sales</button>
+
+        <p id="result"></p>
+
+        </section>
+
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
